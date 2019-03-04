@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_menu_map_icon"
+            android:title="Map View" />
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/ic_menu_list_icon"
+            android:title="List View" />
+    </group>
+
+
+
+    <item android:title="About">
+        <menu>
+            <item
+            android:id="@+id/nav_about_plastic"
+            android:icon="@drawable/ic_menu_about_plastic_icon"
+            android:title="About Plastic" />
+            <item
+                android:id="@+id/nav_about_app"
+                android:icon="@drawable/ic_menu_about_app_icon"
+                android:title="About App" />
+
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_settings_icon"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_closeApp"
+                android:icon="@drawable/ic_menu_close_icon"
+                android:title="Close App" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1da5fb</color>
+    <color name="colorPrimaryDark">#198fda</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="recycleBin">#00ba46</color>
+    <color name="waterFill">#1da5fb</color>
+
+
+    <color name="whiteText">#ffffff</color>
+</resources>
