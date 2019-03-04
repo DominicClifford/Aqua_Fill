@@ -12,12 +12,5 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_list__nav__bar">List_Nav_Bar</string>
 
-    <!--
-    Settings Page
-    -->
-
-    <string name="no_settings">COMING SOON!!! \n \n
-        No Setting are currently available for users of this app</string>
-
 
 </resources>
