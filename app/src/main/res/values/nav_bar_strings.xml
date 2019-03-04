@@ -3,6 +3,8 @@
 
     <!-- Nav Headings -->
     <string name="nav_about">About</string>
+    <string name="nav_header_title">Aqua Fill</string>
+    <string name="nav_header_subtitle">Win Win Situation</string>
 
     <!-- Nav Content -->
     <string name="nav_map">Map View</string>
