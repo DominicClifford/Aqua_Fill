@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Plastic Facts -->
+    <string name="abPlastic_pFactSubHead"> The Facts </string>
+    <string name="abPlastic_pFactsIntro">\ - Plastic bottles make up 53% of all household plastic waste.
+        \n \n
+        - 38.5 million plastic bottles are used every year.
+        \n \n
+        - 23.5 million plastic bottles are recycled every year.
+        \n \n
+        - 15 million plastic bottles are NOT recycled every year.
+        \n \n
+        - 700 thousand plastic bottles are littered every year.
+        \n \n
+        - Plastic bottles can take up to 450 years to decompose in landfill.
+        \n \n
+        - 73% of all fish contain some form of plastic.
+
+
+    </string>
+
+    <string name="abPlastic_TypesSubHead"> Types Of Plastic </string>
+    <string name="abPlastic_TypesMainText"> There are many different types of plastic, some are
+        easy to recycle, and others can only been recycled at limited facilities. </string>
+
 </resources>
