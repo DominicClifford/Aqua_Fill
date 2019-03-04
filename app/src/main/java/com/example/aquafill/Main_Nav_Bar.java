@@ -323,8 +323,8 @@ public class Main_Nav_Bar extends AppCompatActivity
 
         } else if (id == R.id.nav_list) {
 
-            Intent openList = new Intent(this, Location_ListView.class);
-            startActivity(openList);
+            //Intent openList = new Intent(this, Location_ListView.class);
+            //startActivity(openList);
 
         } else if (id == R.id.nav_about_plastic) {
 
