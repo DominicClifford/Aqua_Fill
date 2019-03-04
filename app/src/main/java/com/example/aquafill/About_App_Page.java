@@ -1,8 +1,10 @@
 package com.example.aquafill;
 
+import android.graphics.Paint;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class About_App_Page extends AppCompatActivity {
 
@@ -13,5 +15,9 @@ public class About_App_Page extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("About App");
+
+        //TextView ourAim = (TextView) findViewById(R.id.abApp_AimSubHead);
+        //ourAim.setPaintFlags(ourAim.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+
     }
 }

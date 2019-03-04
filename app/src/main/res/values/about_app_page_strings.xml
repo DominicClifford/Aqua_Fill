@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Page headers -->
+    <string name="abApp_page_header">About Aqua Fill</string>
+
+    <!-- Our Aim -->
+    <string name="abApp_AimSubHead"> Our Aim </string>
+    <string name="abApp_AimMainText"> Our aim is to reduce the ever growing amount of plastic waste
+        generated everyday through the use of disposable, one use plastic drinking bottles, and
+        help to improve the water consumption level of individuals throughout the day.
+    </string>
+
+    <!-- Our App -->
+    <string name="abApp_AppSubHead"> Our App </string>
+    <string name="abApp_AppMainText"> Unlike similar apps with the same aim as us we don\'t just
+        stop at showing you where filling locations are, we help you to complete the full cycle of a
+        plastic bottle, from purchase to re-use to recycling, that means we show you both filling
+        stations and recycling bin which no other app currently does.
+        \n \n
+        Other apps also only let you input locations, we go a little further than that, we allow all
+        users to vote on a location, that means if the location was a falls addition or if the
+        location closes and subsequently receives more down votes that up votes it will be instantly
+        removed from the map leading to less frustration when you really need to refill or dispose
+        of you bottles.
+    </string>
+
+    <!-- Socials -->
+    <string name="abApp_SocialSubHead"> Our Socials </string>
+    <string name="abApp_SocialMainText"> We don\'t currently have any social media accounts :(
+    </string>
+
+
 </resources>
