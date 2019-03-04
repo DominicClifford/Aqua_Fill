@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nav Headings -->
+    <string name="nav_about">About</string>
+
+    <!-- Nav Content -->
+    <string name="nav_map">Map View</string>
+    <string name="nav_ab_plastic">About Plastic</string>
+    <string name="nav_ab_app">About App</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_close_app">Close App</string>
+
+
+
+
+</resources>

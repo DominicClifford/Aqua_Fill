@@ -7,39 +7,35 @@
         <item
             android:id="@+id/nav_map"
             android:icon="@drawable/ic_menu_map_icon"
-            android:title="Map View" />
-        <item
-            android:id="@+id/nav_list"
-            android:icon="@drawable/ic_menu_list_icon"
-            android:title="List View" />
+            android:title="@string/nav_map" />
     </group>
 
 
 
-    <item android:title="About">
+    <item android:title="@string/nav_about">
         <menu>
             <item
             android:id="@+id/nav_about_plastic"
             android:icon="@drawable/ic_menu_about_plastic_icon"
-            android:title="About Plastic" />
+            android:title="@string/nav_ab_plastic" />
             <item
                 android:id="@+id/nav_about_app"
                 android:icon="@drawable/ic_menu_about_app_icon"
-                android:title="About App" />
+                android:title="@string/nav_ab_app" />
 
         </menu>
     </item>
 
-    <item android:title="Settings">
+    <item android:title="@string/nav_settings">
         <menu>
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_menu_settings_icon"
-                android:title="Settings" />
+                android:title="@string/nav_settings" />
             <item
                 android:id="@+id/nav_closeApp"
                 android:icon="@drawable/ic_menu_close_icon"
-                android:title="Close App" />
+                android:title="@string/nav_close_app" />
         </menu>
     </item>
 

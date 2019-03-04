@@ -321,12 +321,12 @@ public class Main_Nav_Bar extends AppCompatActivity
             Intent openMap = new Intent(this, Main_Nav_Bar.class);
             startActivity(openMap);*/
 
-        } else if (id == R.id.nav_list) {
+        } /*else if (id == R.id.nav_list) {
 
             //Intent openList = new Intent(this, Location_ListView.class);
             //startActivity(openList);
 
-        } else if (id == R.id.nav_about_plastic) {
+        }*/ else if (id == R.id.nav_about_plastic) {
 
             Intent openAboutPlastic = new Intent(this, About_Plastic_Page.class);
             startActivity(openAboutPlastic);
