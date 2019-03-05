@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
 
         <!-- Plastic Facts -->
 
@@ -112,7 +112,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/pet"
                 android:src="@drawable/pet"
-                android:layout_weight="5" />
+                android:layout_weight="5"
+                tools:ignore="NestedWeights"/>
 
             <TextView
                 android:id="@+id/abPlastic_pet"
@@ -151,7 +152,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/hdpe"
                 android:src="@drawable/hdpe"
-                android:layout_weight="5" />
+                android:layout_weight="5"
+                tools:ignore="NestedWeights"/>
 
             <TextView
                 android:id="@+id/abPlastic_hdpe"
@@ -190,7 +192,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/pvc"
                 android:src="@drawable/pvc"
-                android:layout_weight="5" />
+                android:layout_weight="5"
+                tools:ignore="NestedWeights"/>
 
             <TextView
                 android:id="@+id/abPlastic_pvc"
@@ -229,7 +232,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/ldpe"
                 android:src="@drawable/ldpe"
-                android:layout_weight="5" />
+                android:layout_weight="5"
+                tools:ignore="NestedWeights"/>
 
             <TextView
                 android:id="@+id/abPlastic_ldpe"
@@ -268,7 +272,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/pp"
                 android:src="@drawable/pp"
-                android:layout_weight="5" />
+                android:layout_weight="5"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:id="@+id/abPlastic_pp"
@@ -307,7 +312,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/ps"
                 android:src="@drawable/ps"
-                android:layout_weight="5" />
+                android:layout_weight="5"
+                tools:ignore="NestedWeights"/>
 
             <TextView
                 android:id="@+id/abPlastic_ps"
@@ -346,7 +352,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/other"
                 android:src="@drawable/other"
-                android:layout_weight="5" />
+                android:layout_weight="5"
+                tools:ignore="NestedWeights"/>
 
             <TextView
                 android:id="@+id/abPlastic_other"
