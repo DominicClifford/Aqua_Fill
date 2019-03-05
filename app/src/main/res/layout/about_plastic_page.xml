@@ -5,11 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".About_Plastic_Page">
+    tools:context=".About_Plastic_Page"
+    android:background="@color/whiteText">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <!-- Plastic Facts -->
@@ -89,6 +90,279 @@
             android:textAlignment="center"
             android:textColor="@color/pureBlack"
             android:textSize="20sp" />
+
+        <!-- PET -->
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="390dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/pureBlack"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/pet"
+                android:src="@drawable/pet"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/abPlastic_pet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/abPlastic_pet"
+                android:textAlignment="center"
+                android:textColor="@color/pureBlack"
+                android:textSize="20sp"
+                android:layout_weight="95"/>
+        </LinearLayout>
+
+        <!-- HDPE -->
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="390dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/pureBlack"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/hdpe"
+                android:src="@drawable/hdpe"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/abPlastic_hdpe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/abPlastic_hdpe"
+                android:textAlignment="center"
+                android:textColor="@color/pureBlack"
+                android:textSize="20sp"
+                android:layout_weight="95"/>
+        </LinearLayout>
+
+        <!-- PVC -->
+
+        <View
+        android:id="@+id/divider5"
+        android:layout_width="390dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/pureBlack"
+        android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/pvc"
+                android:src="@drawable/pvc"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/abPlastic_pvc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/abPlastic_pvc"
+                android:textAlignment="center"
+                android:textColor="@color/pureBlack"
+                android:textSize="20sp"
+                android:layout_weight="95"/>
+        </LinearLayout>
+
+        <!-- LDPE -->
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="390dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/pureBlack"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ldpe"
+                android:src="@drawable/ldpe"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/abPlastic_ldpe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/abPlastic_ldpe"
+                android:textAlignment="center"
+                android:textColor="@color/pureBlack"
+                android:textSize="20sp"
+                android:layout_weight="95"/>
+        </LinearLayout>
+
+        <!-- LDPE -->
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="390dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/pureBlack"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/pp"
+                android:src="@drawable/pp"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/abPlastic_pp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/abPlastic_pp"
+                android:textAlignment="center"
+                android:textColor="@color/pureBlack"
+                android:textSize="20sp"
+                android:layout_weight="95"/>
+        </LinearLayout>
+
+        <!-- PS -->
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="390dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/pureBlack"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ps"
+                android:src="@drawable/ps"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/abPlastic_ps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/abPlastic_ps"
+                android:textAlignment="center"
+                android:textColor="@color/pureBlack"
+                android:textSize="20sp"
+                android:layout_weight="95"/>
+        </LinearLayout>
+
+        <!-- PS -->
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="390dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/pureBlack"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/other"
+                android:src="@drawable/other"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/abPlastic_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/abPlastic_other"
+                android:textAlignment="center"
+                android:textColor="@color/pureBlack"
+                android:textSize="20sp"
+                android:layout_weight="95"/>
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -3,7 +3,9 @@
 
     <!-- Plastic Facts -->
     <string name="abPlastic_pFactSubHead"> The Facts </string>
-    <string name="abPlastic_pFactsIntro">\ - Plastic bottles make up 53% of all household plastic waste.
+    <string name="abPlastic_pFactsIntro"> \ - Plastic bottles are made from the easiest type of plastic to recycle.
+        \n \n
+        - Plastic bottles make up 53% of all household plastic waste.
         \n \n
         - 38.5 million plastic bottles are used every year.
         \n \n
@@ -17,11 +19,35 @@
         \n \n
         - 73% of all fish contain some form of plastic.
 
-
     </string>
 
+    <!-- Types of Plastic -->
     <string name="abPlastic_TypesSubHead"> Types Of Plastic </string>
-    <string name="abPlastic_TypesMainText"> There are many different types of plastic, some are
-        easy to recycle, and others can only been recycled at limited facilities. </string>
+    <string name="abPlastic_TypesMainText"> There are 7 different types of plastic, the first is the
+        easiest to recycle and the last is the hardest. Bellow are all the different types </string>
+    <string name="abPlastic_pet"> Used for fizzy drinks, water bottles and salad trays.
+        PET is widely recycled back into the manufacturing of items such as textiles, clothing,
+        food and beverage containers. </string>
+    <string name="abPlastic_hdpe"> Used for milk bottles, bleach, detergents and some shampoo
+        bottles. It is easily recyclable back into items such as non food containers, detergent
+        bottles and floor tiles.</string>
+    <string name="abPlastic_pvc"> Used in the manufacturing of carpet backing, pipes, window and
+        door frames and fittings within the home. Where recycled, it is used for the
+        remanufacturing of packaging, paneling, guttering, electrical equipment, traffic cones
+        etc </string>
+    <string name="abPlastic_ldpe"> Used commonly for bin liners, packaging film, squeezable bottles
+        and carrier bags. After being recycled it’s use is common in the manufacturing of shipping
+        envelopes, bin liners and carrier bags.</string>
+    <string name="abPlastic_pp"> Used in the packaging of food and non food containers, margarine
+        tubs, microwaveable meal trays. It’s fibres are also used for carpets, wall coverings and
+        some vehicle upholstery. It’s use after recycling the material is very similar to it’s
+        originally designed purpose.</string>
+    <string name="abPlastic_ps"> Used for packaging protection uses especially electronic goods and
+        toys whilst in transit, some foods such as hamburger boxes, egg cartons, and yoghurts. PS
+        is not typically recycled, but please check with your local recycling facility.</string>
+    <string name="abPlastic_other"> Other plastics that do not fall into the categories above may
+        be highlighted with the number 7 logo or the word other.</string>
+
+
 
 </resources>
