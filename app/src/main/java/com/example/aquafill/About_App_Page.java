@@ -17,5 +17,6 @@ public class About_App_Page extends AppCompatActivity {
         //TextView ourAim = (TextView) findViewById(R.id.abApp_AimSubHead);
         //ourAim.setPaintFlags(ourAim.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
+        //test
     }
 }
