@@ -276,7 +276,7 @@ public class Main_Nav_Bar extends AppCompatActivity
         MarkerOptions options1 = new MarkerOptions()
                 .title("McDonalds UXB")
                 .snippet(upVotes)
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.recycle_icon));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.recycle_pin));
 
         mMarker = mMap.addMarker(options1.position(McD_UXB));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_UXB));
@@ -293,7 +293,7 @@ public class Main_Nav_Bar extends AppCompatActivity
         MarkerOptions options = new MarkerOptions()
                 .title("McDonalds Chimes")
                 .snippet(upVotes)
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.water_icon));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.water_pin));
 
         mMarker = mMap.addMarker(options.position(McD_Chim));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_Chim));
