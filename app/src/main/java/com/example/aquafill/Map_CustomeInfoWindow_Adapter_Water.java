@@ -22,30 +22,33 @@ public class Map_CustomeInfoWindow_Adapter_Water implements GoogleMap.InfoWindow
 
         //setting text to adaptor title
         String title = marker.getTitle();
-        TextView wTitle = (TextView) view.findViewById(R.id.locTitle);
+        TextView wTitle = view.findViewById(R.id.locTitle);
 
         //if title = not null change text to that in title
         if(!title.equals("")){
             wTitle.setText(title);
         }
 
-        //set snippet text to adaptor snippet
-        String upsnippet = marker.getSnippet();
-        TextView wUpSnippet = (TextView) view.findViewById(R.id.upVotes);
+        /*replace Image
+        ImageView refill = null;
+        ImageView wRefill = view.findViewById(R.id.water);
 
-        //if title = not null change text to that in snippet
-        if(!upsnippet.equals("")){
-            wUpSnippet.setText(upsnippet);
-        }
+        if (refill.equals(null)) {
+            wRefill.setImageResource(R.drawable.ic_refill);
+        }*/
 
-        //set snippet text to adaptor snippet
-        String downsnippet = marker.getSnippet();
-        TextView wDownSnippet = (TextView) view.findViewById(R.id.downVotes);
+        InfoWindowData_Water infoWindowDataWater = (InfoWindowData_Water) marker.getTag();
 
-        //if title = not null change text to that in snippet
-        if(!downsnippet.equals("")){
-            wDownSnippet.setText(downsnippet);
-        }
+        String upVotes1 = infoWindowDataWater.getUpvotes1();
+        TextView wUpvotes1 = view.findViewById(R.id.upVotes1);
+        wUpvotes1.setText(upVotes1);
+
+
+        String DownVotes1 = InfoWindowData_Water.getDownvotes1();
+        TextView Downvotes1 = view.findViewById(R.id.downVotes1);
+        Downvotes1.setText(DownVotes1);
+
+
     }
 
 
@@ -59,5 +62,6 @@ public class Map_CustomeInfoWindow_Adapter_Water implements GoogleMap.InfoWindow
     public View getInfoContents(Marker marker) {
         renderWindowText(marker, mWindow);
         return mWindow;
+
     }
 }

@@ -17,7 +17,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/water_pin"
+            android:id="@+id/water"
             android:src="@drawable/ic_refill"
              />
 
@@ -47,7 +47,7 @@
                 tools:ignore="InefficientWeight">
 
                 <TextView
-                    android:id="@+id/upVotes"
+                    android:id="@+id/upVotes1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -77,7 +77,7 @@
                     android:layout_weight="75" />
 
                 <TextView
-                    android:id="@+id/downVotes"
+                    android:id="@+id/downVotes1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

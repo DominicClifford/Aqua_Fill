@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.Marker;
 
+
 public class Map_CustomeInfoWindow_Adapter_Recycle implements GoogleMap.InfoWindowAdapter{
 
     private final View mWindow;
@@ -29,23 +30,24 @@ public class Map_CustomeInfoWindow_Adapter_Recycle implements GoogleMap.InfoWind
             wTitle.setText(title);
         }
 
-        //set snippet text to adaptor snippet
-        String upsnippet = marker.getSnippet();
-        TextView wUpSnippet = (TextView) view.findViewById(R.id.upVotes);
+        /*replace Image
+        ImageView recycle = (null);
+        ImageView wRecycle = view.findViewById(R.id.recycle);
 
-        //if title = not null change text to that in snippet
-        if(!upsnippet.equals("")){
-            wUpSnippet.setText(upsnippet);
-        }
+        if (recycle.equals(null)) {
+            wRecycle.setImageResource(R.drawable.ic_recycle);
+        }*/
 
-        //set snippet text to adaptor snippet
-        String downsnippet = marker.getSnippet();
-        TextView wDownSnippet = (TextView) view.findViewById(R.id.downVotes);
+        InfoWindowData_Recycle infoWindowDataRecycle = (InfoWindowData_Recycle) marker.getTag();
 
-        //if title = not null change text to that in snippet
-        if(!downsnippet.equals("")){
-            wDownSnippet.setText(downsnippet);
-        }
+        String upVotes = infoWindowDataRecycle.getUpvotes();
+        TextView wUpvotes = view.findViewById(R.id.upVotes);
+        wUpvotes.setText(upVotes);
+
+
+        String DownVotes = infoWindowDataRecycle.getDownvotes();
+        TextView Downvotes_tv = view.findViewById(R.id.downVotes);
+        Downvotes_tv.setText(DownVotes);
     }
 
 

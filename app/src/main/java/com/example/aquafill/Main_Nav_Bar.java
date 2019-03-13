@@ -17,7 +17,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.Toast;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -151,8 +150,6 @@ public class Main_Nav_Bar extends AppCompatActivity
         Get Locations
         ---------- */
 
-
-
         getInfoWindowRecycle();
         getInfoWindowWater();
     }
@@ -260,45 +257,46 @@ public class Main_Nav_Bar extends AppCompatActivity
     Location Info Display
     ------------------ */
 
-    public boolean getInfoWindowRecycle(){
+    private void getInfoWindowRecycle(){
         LatLng McD_UXB = new LatLng(51.548227, -0.481134);
         String upVotes = "30";
-        String downVotes = "30";
+        String downVotes = "20";
 
-        String upVotes1 = "60";
-        String downVotes1 = "3";
-        MarkerOptions options1 = new MarkerOptions()
+        MarkerOptions options = new MarkerOptions()
                 .title("McDonalds UXB")
-                .snippet(upVotes)
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.recycle_pin));
+
+        InfoWindowData_Recycle info = new InfoWindowData_Recycle();
+        info.setUpvotes(upVotes);
+        info.setDownvotes(downVotes);
 
         //Set icon on map and implement Info Window
         mMap.setInfoWindowAdapter(new Map_CustomeInfoWindow_Adapter_Recycle(Main_Nav_Bar.this));
 
-        mMarker = mMap.addMarker(options1.position(McD_UXB));
+        mMarker = mMap.addMarker(options.position(McD_UXB));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_UXB));
 
-        return false;
     }
 
-    public boolean getInfoWindowWater(){
+    private void getInfoWindowWater(){
         LatLng McD_Chim = new LatLng(51.545670, -0.477449);
-        String upVotes = "60";
-        String downVotes = "60";
+        String upVotes1 = "60";
+        String downVotes1 = "30";
 
-        MarkerOptions options = new MarkerOptions()
+        MarkerOptions options1 = new MarkerOptions()
                 .title("McDonalds Chimes")
-                .snippet(upVotes)
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.water_pin));
+
+        InfoWindowData_Water info1 = new InfoWindowData_Water();
+        info1.setUpvotes1(upVotes1);
+        info1.setDownvotes1(downVotes1);
 
         //Set icon on map and implement Info Window
         mMap.setInfoWindowAdapter(new Map_CustomeInfoWindow_Adapter_Water(Main_Nav_Bar.this));
 
-        mMarker = mMap.addMarker(options.position(McD_Chim));
+        mMarker = mMap.addMarker(options1.position(McD_Chim));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_Chim));
 
-
-        return false;
     }
 
 
