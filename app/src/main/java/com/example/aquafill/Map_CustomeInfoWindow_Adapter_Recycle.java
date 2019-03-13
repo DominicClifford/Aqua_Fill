@@ -3,6 +3,7 @@ package com.example.aquafill;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.GoogleMap;
@@ -30,6 +31,15 @@ public class Map_CustomeInfoWindow_Adapter_Recycle implements GoogleMap.InfoWind
             wTitle.setText(title);
         }
 
+                /*set snippet text to adaptor snippet
+        String upsnippet = marker.getSnippet();
+        TextView wUpSnippet = (TextView) view.findViewById(R.id.upVotes);
+
+        //if title = not null change text to that in snippet
+        if(!upsnippet.equals("")){
+            wUpSnippet.setText(upsnippet);
+        }*/
+
         /*replace Image
         ImageView recycle = (null);
         ImageView wRecycle = view.findViewById(R.id.recycle);
@@ -48,6 +58,17 @@ public class Map_CustomeInfoWindow_Adapter_Recycle implements GoogleMap.InfoWind
         String DownVotes = infoWindowDataRecycle.getDownvotes();
         TextView Downvotes_tv = view.findViewById(R.id.downVotes);
         Downvotes_tv.setText(DownVotes);
+
+        //sets icon image
+        Integer Image1 = InfoWindowData_Water.getImage1();
+
+        if (Image1 == 2) {
+            ImageView refill = view.findViewById(R.id.water);
+            refill.setImageResource(R.drawable.ic_refill);
+        } else {
+            ImageView refill = view.findViewById(R.id.water);
+            refill.setImageResource(R.drawable.ic_recycle);
+        }
     }
 
 

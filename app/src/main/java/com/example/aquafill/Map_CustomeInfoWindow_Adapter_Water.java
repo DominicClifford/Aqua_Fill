@@ -1,8 +1,10 @@
 package com.example.aquafill;
 
 import android.content.Context;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.GoogleMap;
@@ -29,6 +31,15 @@ public class Map_CustomeInfoWindow_Adapter_Water implements GoogleMap.InfoWindow
             wTitle.setText(title);
         }
 
+        /*set snippet text to adaptor snippet
+        String upsnippet = marker.getSnippet();
+        TextView wUpSnippet = (TextView) view.findViewById(R.id.upVotes);
+
+        //if title = not null change text to that in snippet
+        if(!upsnippet.equals("")){
+            wUpSnippet.setText(upsnippet);
+        }*/
+
         /*replace Image
         ImageView refill = null;
         ImageView wRefill = view.findViewById(R.id.water);
@@ -39,14 +50,27 @@ public class Map_CustomeInfoWindow_Adapter_Water implements GoogleMap.InfoWindow
 
         InfoWindowData_Water infoWindowDataWater = (InfoWindowData_Water) marker.getTag();
 
+        //sets upvotes
         String upVotes1 = infoWindowDataWater.getUpvotes1();
         TextView wUpvotes1 = view.findViewById(R.id.upVotes1);
         wUpvotes1.setText(upVotes1);
 
-
+        //sets downvotes
         String DownVotes1 = InfoWindowData_Water.getDownvotes1();
         TextView Downvotes1 = view.findViewById(R.id.downVotes1);
         Downvotes1.setText(DownVotes1);
+
+
+        //sets icon image
+        Integer Image1 = InfoWindowData_Water.getImage1();
+
+        if (Image1 == 2) {
+            ImageView refill = view.findViewById(R.id.water);
+            refill.setImageResource(R.drawable.ic_refill);
+        } else {
+            ImageView refill = view.findViewById(R.id.water);
+            refill.setImageResource(R.drawable.ic_recycle);
+        }
 
 
     }

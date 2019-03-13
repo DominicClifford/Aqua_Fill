@@ -279,23 +279,56 @@ public class Main_Nav_Bar extends AppCompatActivity
     }
 
     private void getInfoWindowWater(){
-        LatLng McD_Chim = new LatLng(51.545670, -0.477449);
+
+        //Get Latitude and Longitude
+        double lat = 51.545670;
+        double log = -0.477449;
+
+        //Get Name/Title of place
+        String title1 = "McDonalds Chimes";
+        //Gets Down Votes
         String upVotes1 = "60";
+        //Gets Down Votes
         String downVotes1 = "30";
+        //Get Image Type
+        Integer image1 = 2;
 
-        MarkerOptions options1 = new MarkerOptions()
-                .title("McDonalds Chimes")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.water_pin));
+        LatLng McD_Chim = new LatLng(lat, log);
 
-        InfoWindowData_Water info1 = new InfoWindowData_Water();
-        info1.setUpvotes1(upVotes1);
-        info1.setDownvotes1(downVotes1);
+        if (image1 == 2){
+            MarkerOptions options1 = new MarkerOptions()
+                    .title(title1)
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.water_pin));
 
-        //Set icon on map and implement Info Window
-        mMap.setInfoWindowAdapter(new Map_CustomeInfoWindow_Adapter_Water(Main_Nav_Bar.this));
+            InfoWindowData_Water info1 = new InfoWindowData_Water();
+            info1.setImage1(image1);
+            info1.setUpvotes1(upVotes1);
+            info1.setDownvotes1(downVotes1);
 
-        mMarker = mMap.addMarker(options1.position(McD_Chim));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_Chim));
+            //Set icon on map and implement Info Window
+            mMap.setInfoWindowAdapter(new Map_CustomeInfoWindow_Adapter_Water(Main_Nav_Bar.this));
+
+            mMarker = mMap.addMarker(options1.position(McD_Chim));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_Chim));
+        }else {
+            MarkerOptions options1 = new MarkerOptions()
+                    .title(title1)
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.recycle_pin));
+
+            InfoWindowData_Water info1 = new InfoWindowData_Water();
+            info1.setImage1(image1);
+            info1.setUpvotes1(upVotes1);
+            info1.setDownvotes1(downVotes1);
+
+            //Set icon on map and implement Info Window
+            mMap.setInfoWindowAdapter(new Map_CustomeInfoWindow_Adapter_Water(Main_Nav_Bar.this));
+
+            mMarker = mMap.addMarker(options1.position(McD_Chim));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_Chim));
+        }
+
+
+
 
     }
 
