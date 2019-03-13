@@ -17,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.widget.Toast;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -150,19 +151,12 @@ public class Main_Nav_Bar extends AppCompatActivity
         Get Locations
         ---------- */
 
-        int type = 1;
-        int type1 = 2;
 
-        if (type == 1){
-            getInfoWindowRecycle();
-        }
 
-        if (type1 == 2){
-            getInfoWindowWater();
-
-        }
-
+        getInfoWindowRecycle();
+        getInfoWindowWater();
     }
+
 
     //get current location and show on map
     private void getDeviceLocation(){
@@ -266,7 +260,7 @@ public class Main_Nav_Bar extends AppCompatActivity
     Location Info Display
     ------------------ */
 
-    private void getInfoWindowRecycle(){
+    public boolean getInfoWindowRecycle(){
         LatLng McD_UXB = new LatLng(51.548227, -0.481134);
         String upVotes = "30";
         String downVotes = "30";
@@ -278,14 +272,16 @@ public class Main_Nav_Bar extends AppCompatActivity
                 .snippet(upVotes)
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.recycle_pin));
 
+        //Set icon on map and implement Info Window
+        mMap.setInfoWindowAdapter(new Map_CustomeInfoWindow_Adapter_Recycle(Main_Nav_Bar.this));
+
         mMarker = mMap.addMarker(options1.position(McD_UXB));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_UXB));
 
-        //Set icon on map and implement Info Window
-        mMap.setInfoWindowAdapter(new Map_CustomeInfoWindow_Adapter_Recycle(Main_Nav_Bar.this));
+        return false;
     }
 
-    private void getInfoWindowWater(){
+    public boolean getInfoWindowWater(){
         LatLng McD_Chim = new LatLng(51.545670, -0.477449);
         String upVotes = "60";
         String downVotes = "60";
@@ -295,12 +291,14 @@ public class Main_Nav_Bar extends AppCompatActivity
                 .snippet(upVotes)
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.water_pin));
 
-        mMarker = mMap.addMarker(options.position(McD_Chim));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_Chim));
-
         //Set icon on map and implement Info Window
         mMap.setInfoWindowAdapter(new Map_CustomeInfoWindow_Adapter_Water(Main_Nav_Bar.this));
 
+        mMarker = mMap.addMarker(options.position(McD_Chim));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(McD_Chim));
+
+
+        return false;
     }
 
 
