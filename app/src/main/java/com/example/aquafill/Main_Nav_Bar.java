@@ -59,7 +59,13 @@ public class Main_Nav_Bar extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        connection();
     }
+
+    public void connection(){
+    }
+
 
     @Override
     public void onBackPressed() {
