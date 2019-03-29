@@ -1,7 +1,6 @@
 package com.example.aquafill;
 
 import android.Manifest;
-
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -17,7 +16,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
+
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -35,6 +37,7 @@ import com.google.android.gms.tasks.Task;
 public class Main_Nav_Bar extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
 
+    private ImageView imageView;
     /* ---------
     Nav Bar Code
     --------- */
@@ -50,7 +53,6 @@ public class Main_Nav_Bar extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -60,9 +62,30 @@ public class Main_Nav_Bar extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        imageView = (ImageView) findViewById(R.id.addLocation);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
+
         connection();
     }
 
+    /* ------------
+    Adding Location
+    ------------ */
+
+    public void openDialog(){
+        Add_Location_Page add_location_page = new Add_Location_Page();
+        add_location_page.show(getSupportFragmentManager(), "add location");
+
+    }
+
+    /* -------------
+    Connecting to dB
+    ------------- */
     public void connection(){
     }
 
