@@ -5,15 +5,17 @@
 
     <EditText
         android:id="@+id/type"
-        android:hint="Insert 1 for Fill or 2 for Bin"
+        android:hint="@string/addType"
         android:layout_width="match_parent"
+        android:fontFamily="@font/audiowide"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name this Location"
+        android:hint="@string/addName"
+        android:fontFamily="@font/audiowide"
         android:layout_below="@id/type" />
 
 </RelativeLayout>
