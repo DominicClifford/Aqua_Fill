@@ -69,7 +69,6 @@ public class Main_Nav_Bar extends AppCompatActivity
                 openDialog();
             }
         });
-
         connection();
     }
 
@@ -82,13 +81,11 @@ public class Main_Nav_Bar extends AppCompatActivity
         add_location_page.show(getSupportFragmentManager(), "add location");
 
     }
-
     /* -------------
     Connecting to dB
     ------------- */
     public void connection(){
     }
-
 
     @Override
     public void onBackPressed() {
@@ -119,7 +116,6 @@ public class Main_Nav_Bar extends AppCompatActivity
             case R.id.action_bar_refresh:
                 initMap();
                 return true;
-
         }
 
         return super.onOptionsItemSelected(item);
