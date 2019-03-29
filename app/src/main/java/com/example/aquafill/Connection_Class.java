@@ -68,5 +68,12 @@ public class Connection_Class {
             e.printStackTrace();
         }
     }
+
+    private static void updateData(String connectionURL){
+
+        String updateSql = "UPDATE IMTo";
+
+        ResultSet resultSet = null;
+    }
 }
 
